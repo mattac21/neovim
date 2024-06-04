@@ -44,12 +44,6 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
@@ -58,5 +52,16 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- A TAB character looks like 4 spaces
+vim.o.tabstop = 4
+-- Pressing the TAB key will insert spaces instead of a TAB character
+vim.o.expandtab = true
+
+-- Number of spaces inserted instead of a TAB character
+vim.o.softtabstop = 4
+
+-- Number of spaces inserted when indenting
+vim.o.shiftwidth = 4
 
 -- vim: ts=2 sts=2 sw=2 et
