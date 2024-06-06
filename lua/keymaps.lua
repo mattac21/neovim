@@ -48,4 +48,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.api.nvim_create_autocmd('BufEnter', {
+  desc = 'Center buffer when entering',
+  group = vim.api.nvim_create_augroup('no-neck-pain', {}),
+  callback = function()
+    require('no-neck-pain').enable()
+  end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
