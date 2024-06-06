@@ -9,7 +9,7 @@ return {
         enabled = false,
       },
       indent = {
-        char = '|',
+        char = '│',
       },
     },
     config = function(_, opts)
