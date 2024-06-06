@@ -44,6 +44,12 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- No wrapping of long lines
+vim.opt.wrap = false
+
+-- Set cursor to be block in all modes
+vim.opt.guicursor = 'n-v-c-i:block'
+
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
@@ -63,5 +69,11 @@ vim.o.softtabstop = 4
 
 -- Number of spaces inserted when indenting
 vim.o.shiftwidth = 4
+
+-- Set status bar to be global
+vim.o.laststatus = 3
+
+-- Enable relative line numbers
+vim.opt.relativenumber = true
 
 -- vim: ts=2 sts=2 sw=2 et
