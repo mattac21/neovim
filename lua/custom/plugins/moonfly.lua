@@ -18,6 +18,6 @@ return {
     })
 
     -- Load the colorscheme here.
-    vim.cmd.colorscheme 'moonfly'
+    -- vim.cmd.colorscheme 'moonfly'
   end,
 }
