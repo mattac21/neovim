@@ -56,4 +56,8 @@ vim.api.nvim_create_autocmd('BufEnter', {
   end,
 })
 
+-- Set Ctrl-D and Ctrl-U to center the buffer when jumping
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
 -- vim: ts=2 sts=2 sw=2 et
