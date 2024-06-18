@@ -107,6 +107,9 @@ return {
           --  For example, in C this would take you to the header.
           map('gD', with_zz(vim.lsp.buf.declaration), '[G]oto [D]eclaration')
 
+          -- Get a popup of signature help when hovering over a symbol
+          map('<C-s>', vim.lsp.buf.signature_help, '[S]ignature Help')
+
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
           --    See `:help CursorHold` for information about when this is executed

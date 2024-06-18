@@ -76,4 +76,6 @@ vim.o.laststatus = 3
 -- Enable relative line numbers
 vim.opt.relativenumber = true
 
+vim.cmd 'set termguicolors'
+
 -- vim: ts=2 sts=2 sw=2 et

@@ -8,6 +8,14 @@ return {
         padding = 0,
         margin = { horizontal = 0 },
       },
+      highlight = {
+        groups = {
+          InclineNormal = {
+            default = true,
+            guibg = 'background',
+          },
+        },
+      },
       render = function(props)
         local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':t')
         if filename == '' then

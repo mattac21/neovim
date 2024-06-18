@@ -4,7 +4,7 @@ return {
   name = 'kanagawa',
   init = function()
     -- Load the colorscheme here.
-    vim.cmd.colorscheme 'kanagawa'
+    -- vim.cmd.colorscheme 'kanagawa'
   end,
   opts = {
     overrides = function(colors)

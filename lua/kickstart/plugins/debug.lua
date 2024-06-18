@@ -64,15 +64,15 @@ return {
       icons = { expanded = '▾', collapsed = '▸', current_frame = '*' },
       controls = {
         icons = {
-          pause = '⏸',
-          play = '▶',
-          step_into = '⏎',
-          step_over = '⏭',
-          step_out = '⏮',
-          step_back = 'b',
-          run_last = '▶▶',
-          terminate = '⏹',
-          disconnect = '⏏',
+          pause = "'pause'",
+          play = "'play'",
+          step_into = "'step into'",
+          step_over = "'step over'",
+          step_out = "'step out'",
+          step_back = "'step back'",
+          run_last = "'run last'",
+          terminate = "'terminate'",
+          disconnect = "'disconnect'",
         },
       },
     }
@@ -92,5 +92,7 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
+    vim.keymap.set('n', '<leader>dgt', require('dap-go').debug_test, { desc = '[D]ebug [G]o [T]est' })
+    vim.keymap.set('n', '<leader>dglt', require('dap-go').debug_last_test, { desc = '[D]ebug [G]o [L]ast [T]est' })
   end,
 }

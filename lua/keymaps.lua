@@ -48,16 +48,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.api.nvim_create_autocmd('BufEnter', {
-  desc = 'Center buffer when entering',
-  group = vim.api.nvim_create_augroup('no-neck-pain', {}),
-  callback = function()
-    require('no-neck-pain').enable()
-  end,
-})
+-- vim.api.nvim_create_autocmd('BufEnter', {
+--   desc = 'Center buffer when entering',
+--   group = vim.api.nvim_create_augroup('no-neck-pain', {}),
+--   callback = function()
+--     require('no-neck-pain').enable()
+--   end,
+-- })
 
 -- Set Ctrl-D and Ctrl-U to center the buffer when jumping
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
-
 -- vim: ts=2 sts=2 sw=2 et
