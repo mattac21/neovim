@@ -50,6 +50,9 @@ return {
     -- Toggle the test output panel
     vim.keymap.set('n', '<leader>tot', require('neotest').output_panel.toggle, { desc = '[T]est [O]uput [T]oggle' })
 
+    -- Show individual test output
+    vim.keymap.set('n', '<leader>tos', require('neotest').output.open, { desc = '[T]est [O]uput [S]how' })
+
     -- Clear the test output panel
     vim.keymap.set('n', '<leader>toc', require('neotest').output_panel.clear, { desc = '[T]est [O]uput [C]lear' })
 
