@@ -62,17 +62,32 @@ return {
       --    Feel free to remove or use ones that you like more! :)
       --    Don't feel like these are good choices.
       icons = { expanded = '▾', collapsed = '▸', current_frame = '*' },
-      controls = {
-        icons = {
-          pause = "'pause'",
-          play = "'play'",
-          step_into = "'step into'",
-          step_over = "'step over'",
-          step_out = "'step out'",
-          step_back = "'step back'",
-          run_last = "'run last'",
-          terminate = "'terminate'",
-          disconnect = "'disconnect'",
+      layouts = {
+        {
+          elements = {
+            {
+              id = 'breakpoints',
+              size = 0.25,
+            },
+            {
+              id = 'scopes',
+              size = 0.5,
+            },
+            {
+              id = 'stacks',
+              size = 0.25,
+            },
+          },
+          position = 'left',
+          size = 60,
+        },
+        {
+          elements = { {
+            id = 'repl',
+            size = 1,
+          } },
+          position = 'bottom',
+          size = 15,
         },
       },
     }
