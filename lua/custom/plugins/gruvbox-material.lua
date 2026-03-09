@@ -6,6 +6,6 @@ return {
     vim.cmd 'set background=dark'
     vim.g.gruvbox_material_background = 'hard'
     -- Chnage the background of Incline
-    vim.cmd.colorscheme 'gruvbox-material'
+    -- vim.cmd.colorscheme 'minischeme'
   end,
 }
