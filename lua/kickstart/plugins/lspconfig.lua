@@ -188,6 +188,7 @@ return {
         gopls = {
           settings = {
             gopls = {
+              buildFlags = { "-tags=system_test" },
               semanticTokens = false,
               analyses = {
                 unusedparams = true,
