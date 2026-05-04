@@ -48,6 +48,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.keymap.set('n', '<leader>cb', '<cmd>NoNeckPain<CR>', { desc = '[C]enter [B]uffer' })
+
 -- Set Ctrl-D and Ctrl-U to center the buffer when jumping
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
